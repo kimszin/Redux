@@ -1,18 +1,19 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { actionCreators } from '../Store'
+import React from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { actionCreators } from '../Store';
 
-const ToDo = (props) => {
+function ToDo(props) {
   return (
     <li>
       <Link to={`/${props.id}`}>
-        {props.text} <button onClick={props.onBtnClick}>DEL</button>
+        {props.text}
       </Link>
+      <button onClick={props.onBtnClick}>DEL</button>
     </li>
   )
 }
-
+// ownProps : ToDo 컴포넌트에 전달되는 원래 props
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onBtnClick: () => dispatch(actionCreators.deleteToDo(ownProps.id))

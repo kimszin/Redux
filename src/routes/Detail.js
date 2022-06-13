@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react';
 import { connect } from 'react-redux';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
-const Detail = ({ toDos }) => {
+function Detail({ toDos }) {
   const { id } = useParams();
   const data = toDos.find((toDo) => toDo.id === parseInt(id));
 
@@ -13,6 +13,7 @@ const Detail = ({ toDos }) => {
     </>
   )
 }
+
 const mapStateToProps = (state) => {
   return {
     toDos: state
