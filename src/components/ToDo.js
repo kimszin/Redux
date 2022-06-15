@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { actionCreators } from '../Store';
+import { remove } from '../Store';
 
 function ToDo(props) {
   return (
@@ -16,7 +16,7 @@ function ToDo(props) {
 // ownProps : ToDo 컴포넌트에 전달되는 원래 props
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onBtnClick: () => dispatch(actionCreators.deleteToDo(ownProps.id))
+    onBtnClick: () => dispatch(remove(ownProps.id))
   }
 }
 
