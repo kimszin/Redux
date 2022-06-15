@@ -1,3 +1,6 @@
 # redux
 
-Learning Vanilla-Redux and React-Redux
+리덕스 학습 프로젝트
+
+1. 오리지널 리덕스
+2. 리덕스 툴킷(최종 코드)
