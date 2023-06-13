@@ -1,7 +1,7 @@
-# redux
+# 투두앱
 
-redux 툴킷으로 만든 투두앱  
-(add/remove 기능, detail 페이지)
+\* 사용기술: javascript, redux toolkit  
+\* 기능: add/remove, detail 페이지
 
 ```
 npm install
