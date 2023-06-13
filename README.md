@@ -1,6 +1,9 @@
 # redux
 
-리덕스 학습 프로젝트
+redux 툴킷으로 만든 투두앱  
+(add/remove 기능, detail 페이지)
 
-1. 오리지널 리덕스
-2. 리덕스 툴킷(최종 코드)
+```
+npm install
+npm start
+```
